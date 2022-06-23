@@ -1,0 +1,101 @@
+/*-----Product Line-----*/
+#product-line-wrapper
+{
+    display: none;
+    position: relative;
+    grid-row: 3/4;
+    margin: 20px;
+}
+
+.line-wrapper
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.line-wrapper .title
+{
+    border-bottom: 2px solid black;
+}
+
+.product-line
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+}
+
+.loadmore-btn
+{
+    text-decoration: none;
+    color: #762C8E;
+    width: 100%;
+    text-align:  center;
+    border: 2px solid #762C8E;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.loadmore-btn:hover
+{
+    background: #762C8E;
+    color: white;
+}
+
+.loadmore-btn:active
+{
+    background: #3B1647;
+}
+
+.highlight
+{
+    position: relative;
+    width:  943px;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.highlight img
+{
+    width: 100%;
+}
+
+.highlight .product-info
+{
+    bottom: 10px;
+}
+
+.highlight .product-info .product-name
+{
+    font-size: 20px;
+}
+
+.more-btn
+{
+    font-size: 20px;
+    position: absolute;
+    padding: 35px;
+    bottom: 6px;
+    right: 0;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 1024px)
+{
+     #product-line-wrapper
+     {
+         display: block;
+     }
+}
+
+@media screen and (min-width: 1280px)
+{
+    .highlight
+    {
+        width: 1184px;
+    }
+}

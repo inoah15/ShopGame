@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "RemoveCard";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<link rel="stylesheet" type="text/css" media="screen" href="~/Asset/admin/style/remove-product.css" />
+<script src="~/Asset/admin/script/login.js"></script>
+<div class="body">
+    <div class="list">
+        <a class="list-box" @Html.ActionLink("Dashboard", "DashboardGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Add Product", "AddGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Customer", "Customer", "Admin") </a>
+        <a class="list-box main" @Html.ActionLink("Remove/Edit Product", "RemoveGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Orders", "Oder", "Admin") </a>
+    </div>
+    <div class="info">
+        <div class="remove-product-title">
+            Remove Product
+            <a class="button game main-btn" @Html.ActionLink("Game", "RemoveGame", "Admin")</a>
+            <a class="button card" @Html.ActionLink("Card", "RemoveCard", "Admin") </a>
+        </div>
+        <div class="table-wrapper">
+            <iframe src="~/Asset/admin/list/cards-list.html" frameBorder="0" height="100%" width="100%"></iframe>
+        </div>
+    </div>
+</div>
+

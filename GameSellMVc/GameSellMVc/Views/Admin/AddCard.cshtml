@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "AddCard";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" media="screen" href="~/Asset/admin/style/add-products.css" />
+<script src="~/Asset/admin/script/login.js"></script>
+
+    <div class="body">
+        <div class="list">
+            <a class="list-box" @Html.ActionLink("Dashboard", "DashboardGame", "Admin") </a>
+            <a class="list-box main" @Html.ActionLink("Add Product", "AddGame", "Admin") </a>
+            <a class="list-box" @Html.ActionLink("Customer", "Customer", "Admin") </a>
+            <a class="list-box" @Html.ActionLink("Remove/Edit Product", "RemoveGame", "Admin") </a>
+            <a class="list-box" @Html.ActionLink("Orders", "Oder", "Admin") </a>
+        </div>
+        <div class="info">
+            <div class="add-product-title">
+                Add product
+                <a class="button game"@Html.ActionLink("Game", "AddGame","Admin")</a>
+                <a class="button card  main-btn"@Html.ActionLink("Card", "AddCard", "Admin")</a>
+            </div>
+            <div class="form-wrapper">
+                <div class="form-style-2">
+                    <div class="form-style-2-heading">Fill this form to add a Card</div>
+                    <form action="" method="post">
+                        <label for="field1">
+                            <span>Value<span class="required">*</span></span><select name="field1" class="select-field">
+                                <option value="10">$10.00</option>
+                                <option value="20">$20.00</option>
+                                <option value="30">$30.00</option>
+                                <option value="50">$50.00</option>
+                                <option value="100">$100.00</option>
+                                <option value="200">$200.00</option>
+                                <option value="500">$500.00</option>
+                            </select>
+                        </label>
+                        <label for="field2"><span>Publisher <span class="required">*</span></span><input type="text" class="input-field" name="field2" size="20" /></label>
+                        <label for="field3"><span>Serial <span class="required">*</span></span><input type="text" class="input-field" name="field3" size="20" /></label>
+                        <label for="field4"><span>Validate<span class="required">*</span></span><input type="text" class="input-field" name="field4" value="" /></label>
+                        <label for="field5"><span>Quantity<span class="required">*</span></span><input type="text" class="input-field" name="field5" value="" /></label>
+                        <label for="field6"><span>Price (1pcs)<span class="required">*</span></span><input type="text" class="input-field" name="field6" value="" /></label>
+                        <label for="field7"><span>Notes</span><textarea name="field7" class="textarea-field"></textarea></label>
+
+                        <label><span> </span><input type="submit" value="Submit" /> </label>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+

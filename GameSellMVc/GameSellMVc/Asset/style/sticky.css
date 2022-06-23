@@ -1,0 +1,21 @@
+/*-----Sticky Effect-----*/
+.sticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.body
+{
+    margin-top: 87px;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .body
+    {
+        margin-top: 114px;
+    }
+}
+

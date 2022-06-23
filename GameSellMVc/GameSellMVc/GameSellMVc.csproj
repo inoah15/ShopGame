@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E0C9C7C-A2D1-44D4-8B34-8302696F2CBA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopGame</RootNamespace>
+    <AssemblyName>ShopGame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\FeedBackController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\about_us\about_us.html" />
+    <Content Include="Asset\about_us\images\about_uswallpaper.jpg" />
+    <Content Include="Asset\about_us\images\img_314945.png" />
+    <Content Include="Asset\about_us\images\tri.jpg" />
+    <Content Include="Asset\about_us\images\tuan.jpg" />
+    <Content Include="Asset\about_us\images\vu.jpg" />
+    <Content Include="Asset\about_us\style\style.css" />
+    <Content Include="Asset\account\admin-login.html" />
+    <Content Include="Asset\account\create-account.html" />
+    <Content Include="Asset\account\images\gamehub_adminlogin.png" />
+    <Content Include="Asset\account\images\gamehub_createaccount.png" />
+    <Content Include="Asset\account\images\loginwallpaper.jpg" />
+    <Content Include="Asset\account\script\login.js" />
+    <Content Include="Asset\account\script\validate.js" />
+    <Content Include="Asset\account\style\admin-login-form.css" />
+    <Content Include="Asset\account\style\create-account.css" />
+    <Content Include="Asset\account\style\user-login-form.css" />
+    <Content Include="Asset\account\user-login.html" />
+    <Content Include="Asset\admin\details\all-orders-info.html" />
+    <Content Include="Asset\admin\details\customer-info.html" />
+    <Content Include="Asset\admin\details\game-info.html" />
+    <Content Include="Asset\admin\Images\background.jpg" />
+    <Content Include="Asset\admin\Images\gamehublogo.png" />
+    <Content Include="Asset\admin\list\all-orders-game.html" />
+    <Content Include="Asset\admin\list\cards-list.html" />
+    <Content Include="Asset\admin\list\customer-list.html" />
+    <Content Include="Asset\admin\list\customer-order.html" />
+    <Content Include="Asset\admin\list\games-list.html" />
+    <Content Include="Asset\admin\list\new-orders-card.html" />
+    <Content Include="Asset\admin\list\new-orders-game.html" />
+    <Content Include="Asset\admin\script\login.js" />
+    <Content Include="Asset\admin\script\noti.js" />
+    <Content Include="Asset\admin\style\add-products.css" />
+    <Content Include="Asset\admin\style\edit-style.css" />
+    <Content Include="Asset\admin\style\orders-info.css" />
+    <Content Include="Asset\admin\style\orders-style.css" />
+    <Content Include="Asset\admin\style\orders.css" />
+    <Content Include="Asset\admin\style\remove-product.css" />
+    <Content Include="Asset\admin\style\style.css" />
+    <Content Include="Asset\admin\style\table-style.css" />
+    <Content Include="Asset\category\Images\bt-logo.jpg" />
+    <Content Include="Asset\category\Images\bt1.jpg" />
+    <Content Include="Asset\category\Images\des2.jpg" />
+    <Content Include="Asset\category\Images\dia.jpg" />
+    <Content Include="Asset\category\Images\diablo3.jpg" />
+    <Content Include="Asset\category\Images\e1.png" />
+    <Content Include="Asset\category\Images\e2.png" />
+    <Content Include="Asset\category\Images\e3.png" />
+    <Content Include="Asset\category\Images\eye.png" />
+    <Content Include="Asset\category\Images\gow.jpg" />
+    <Content Include="Asset\category\Images\origin-icon.png" />
+    <Content Include="Asset\category\Images\steam-logo.png" />
+    <Content Include="Asset\category\Images\sw.jpg" />
+    <Content Include="Asset\category\Images\tf2.jpg" />
+    <Content Include="Asset\category\Images\tải xuống.jpg" />
+    <Content Include="Asset\category\Images\wc.jpg" />
+    <Content Include="Asset\category\style\style.css" />
+    <Content Include="Asset\product\A Way Out.html" />
+    <Content Include="Asset\product\ARK Survival Evolved.html" />
+    <Content Include="Asset\product\Assassin%27s Creed Odyssey.html" />
+    <Content Include="Asset\product\Assassin%27s_Creed_III_Deluxe_Edition.html" />
+    <Content Include="Asset\product\Assassin%27s_Creed_II_Deluxe_Edition.html" />
+    <Content Include="Asset\product\Assassin’s Creed® IV Black Flag™.html" />
+    <Content Include="Asset\product\Assassin’s Creed® Unity.html" />
+    <Content Include="Asset\product\Battlefield 1.html" />
+    <Content Include="Asset\product\Battlefield V.html" />
+    <Content Include="Asset\product\Call Of Cthulhu.html" />
+    <Content Include="Asset\product\Counter-Strike Global Offensive.html" />
+    <Content Include="Asset\product\Darksider III.html" />
+    <Content Include="Asset\product\Destiny 2-Forsaken Standard Edition.html" />
+    <Content Include="Asset\product\Diablo 3-Reaper of Souls.html" />
+    <Content Include="Asset\product\Diablo 3.html" />
+    <Content Include="Asset\product\Divinity Original Sin II.html" />
+    <Content Include="Asset\product\Executive Assault 2.html" />
+    <Content Include="Asset\product\Fallout 76.html" />
+    <Content Include="Asset\product\Farming Simulator 19.html" />
+    <Content Include="Asset\product\Football Manager 2019.html" />
+    <Content Include="Asset\product\Friday the 13th.html" />
+    <Content Include="Asset\product\God of War %282018%29.html" />
+    <Content Include="Asset\product\GRIP-Combat Racing.html" />
+    <Content Include="Asset\product\GTA_IV.html" />
+    <Content Include="Asset\product\GTA_V.html" />
+    <Content Include="Asset\product\images\ac2.jpg" />
+    <Content Include="Asset\product\images\ac3.jpg" />
+    <Content Include="Asset\product\images\ac4.jpg" />
+    <Content Include="Asset\product\images\aco.jpg" />
+    <Content Include="Asset\product\images\acu.jpg" />
+    <Content Include="Asset\product\images\ark.jpg" />
+    <Content Include="Asset\product\images\assassins-creed-2.jpg" />
+    <Content Include="Asset\product\images\awo.jpg" />
+    <Content Include="Asset\product\images\awo1.jpg" />
+    <Content Include="Asset\product\images\battle_field_1.jpg" />
+    <Content Include="Asset\product\images\btV.jpg" />
+    <Content Include="Asset\product\images\cc.jpg" />
+    <Content Include="Asset\product\images\csgo.png" />
+    <Content Include="Asset\product\images\D2.jpg" />
+    <Content Include="Asset\product\images\D3.jpg" />
+    <Content Include="Asset\product\images\D4.jpg" />
+    <Content Include="Asset\product\images\D5.jpg" />
+    <Content Include="Asset\product\images\D6.jpg" />
+    <Content Include="Asset\product\images\ea.jpg" />
+    <Content Include="Asset\product\images\ea2.jpg" />
+    <Content Include="Asset\product\images\ea3.jpg" />
+    <Content Include="Asset\product\images\ea4.png" />
+    <Content Include="Asset\product\images\ea5.jpg" />
+    <Content Include="Asset\product\images\fiday3.jpg" />
+    <Content Include="Asset\product\images\fm.png" />
+    <Content Include="Asset\product\images\fm1.png" />
+    <Content Include="Asset\product\images\fm2.jpg" />
+    <Content Include="Asset\product\images\fm3.jpg" />
+    <Content Include="Asset\product\images\fm4.jpg" />
+    <Content Include="Asset\product\images\friday1.jpg" />
+    <Content Include="Asset\product\images\friday2.jpg" />
+    <Content Include="Asset\product\images\friday4.jpg" />
+    <Content Include="Asset\product\images\fs.jpg" />
+    <Content Include="Asset\product\images\fs2.jpg" />
+    <Content Include="Asset\product\images\fs3.jpg" />
+    <Content Include="Asset\product\images\fs4.jpg" />
+    <Content Include="Asset\product\images\fs5.jpg" />
+    <Content Include="Asset\product\images\fs6.jpg" />
+    <Content Include="Asset\product\images\ft13.jpg" />
+    <Content Include="Asset\product\images\grip.jpg" />
+    <Content Include="Asset\product\images\grip1.jpg" />
+    <Content Include="Asset\product\images\grip2.jpg" />
+    <Content Include="Asset\product\images\grip3.jpg" />
+    <Content Include="Asset\product\images\grip4.jpg" />
+    <Content Include="Asset\product\images\gta-iv.jpg" />
+    <Content Include="Asset\product\images\gtav.jpg" />
+    <Content Include="Asset\product\images\mc.jpg" />
+    <Content Include="Asset\product\images\ow.jpg" />
+    <Content Include="Asset\product\images\ph.jpg" />
+    <Content Include="Asset\product\images\ph1.jpg" />
+    <Content Include="Asset\product\images\ph2.jpg" />
+    <Content Include="Asset\product\images\ph3.jpg" />
+    <Content Include="Asset\product\images\ph4.jpg" />
+    <Content Include="Asset\product\images\pubg.jpg" />
+    <Content Include="Asset\product\images\red-dead-2.jpg" />
+    <Content Include="Asset\product\images\rs.jpg" />
+    <Content Include="Asset\product\images\rsz_12gta-iv.jpg" />
+    <Content Include="Asset\product\images\rsz_battle_field_1.jpg" />
+    <Content Include="Asset\product\images\rsz_pubg.jpg" />
+    <Content Include="Asset\product\images\sc.jpg" />
+    <Content Include="Asset\product\images\sc1.jpg" />
+    <Content Include="Asset\product\images\sc2.jpg" />
+    <Content Include="Asset\product\images\sc3.jpg" />
+    <Content Include="Asset\product\images\sc4.jpg" />
+    <Content Include="Asset\product\images\tb.jpg" />
+    <Content Include="Asset\product\images\tb2.jpg" />
+    <Content Include="Asset\product\images\tc.jpg" />
+    <Content Include="Asset\product\images\tr.jpg" />
+    <Content Include="Asset\product\images\tr1.jpg" />
+    <Content Include="Asset\product\images\tr2.jpg" />
+    <Content Include="Asset\product\images\tr3.jpg" />
+    <Content Include="Asset\product\images\tr4.jpg" />
+    <Content Include="Asset\product\images\tw.jpg" />
+    <Content Include="Asset\product\Insurgency.html" />
+    <Content Include="Asset\product\Just Cause 4 .html" />
+    <Content Include="Asset\product\Minecraft.html" />
+    <Content Include="Asset\product\Monster Hunter World.html" />
+    <Content Include="Asset\product\Overkill%27s The Walking Dead.html" />
+    <Content Include="Asset\product\Overwatch.html" />
+    <Content Include="Asset\product\PlayerUnknown%27s Battlegrounds.html" />
+    <Content Include="Asset\product\product.html" />
+    <Content Include="Asset\product\Project Hospital.html" />
+    <Content Include="Asset\product\Red Dead Redemption 2.html" />
+    <Content Include="Asset\product\Rocket League.html" />
+    <Content Include="Asset\product\script\add-to-cart.js" />
+    <Content Include="Asset\product\script\description.js" />
+    <Content Include="Asset\product\script\product-img-wrapper.js" />
+    <Content Include="Asset\product\STAR WARS™ Battlefront™ II %28 Origin %29.html" />
+    <Content Include="Asset\product\StarCraft II-Campaign Collection Digital .html" />
+    <Content Include="Asset\product\style\style.css" />
+    <Content Include="Asset\product\The Witcher 3 Wild Hunt.html" />
+    <Content Include="Asset\product\thronebreaker the witcher tales.html" />
+    <Content Include="Asset\product\Titanfall™ 2.html" />
+    <Content Include="Asset\product\Tom Clancy%27s Ghost Recon® Wildlands.html" />
+    <Content Include="Asset\product\Tom Clancy%27s Rainbow Six Siege.html" />
+    <Content Include="Asset\product\Tropico 6.html" />
+    <Content Include="Asset\product\World War 3.html" />
+    <Content Include="Asset\sale-off\Images\bt-logo.jpg" />
+    <Content Include="Asset\sale-off\Images\bt1.jpg" />
+    <Content Include="Asset\sale-off\Images\cc.jpg" />
+    <Content Include="Asset\sale-off\Images\des2.jpg" />
+    <Content Include="Asset\sale-off\Images\dia.jpg" />
+    <Content Include="Asset\sale-off\Images\diablo3.jpg" />
+    <Content Include="Asset\sale-off\Images\e1.png" />
+    <Content Include="Asset\sale-off\Images\e2.png" />
+    <Content Include="Asset\sale-off\Images\e3.png" />
+    <Content Include="Asset\sale-off\Images\eye.png" />
+    <Content Include="Asset\sale-off\Images\gow.jpg" />
+    <Content Include="Asset\sale-off\Images\origin-icon.png" />
+    <Content Include="Asset\sale-off\Images\steam-logo.png" />
+    <Content Include="Asset\sale-off\Images\sw.jpg" />
+    <Content Include="Asset\sale-off\Images\tag_price_sale_label_offer_discount_coupon_1-512.png" />
+    <Content Include="Asset\sale-off\Images\tf2.jpg" />
+    <Content Include="Asset\sale-off\Images\tải xuống.jpg" />
+    <Content Include="Asset\sale-off\Images\wc.jpg" />
+    <Content Include="Asset\sale-off\style\style.css" />
+    <Content Include="Asset\shopping-cart\Images\csgo.png" />
+    <Content Include="Asset\shopping-cart\Images\gamehub.png" />
+    <Content Include="Asset\shopping-cart\Images\gamehublogo.png" />
+    <Content Include="Asset\shopping-cart\Images\ghost-recon.jpg" />
+    <Content Include="Asset\shopping-cart\Images\pubg.jpg" />
+    <Content Include="Asset\shopping-cart\script\remove.js" />
+    <Content Include="Asset\shopping-cart\shopping-cart.html" />
+    <Content Include="Asset\shopping-cart\style\cart-form.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\burger-menu.js" />
+    <Content Include="Scripts\cart-description.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\menu-bar.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\product-tab.js" />
+    <Content Include="Scripts\slideshow.js" />
+    <Content Include="Asset\images\battle_field_5.jpg" />
+    <Content Include="Asset\images\csgo.png" />
+    <Content Include="Asset\images\gamehub.png" />
+    <Content Include="Asset\images\gamehublogo.png" />
+    <Content Include="Asset\images\ghost-recon.jpg" />
+    <Content Include="Asset\images\insurgency.jpg" />
+    <Content Include="Asset\images\licenses.txt" />
+    <Content Include="Asset\images\pubg.jpg" />
+    <Content Include="Asset\images\slideshow\blackfriday.jpg" />
+    <Content Include="Asset\images\slideshow\christmas.jpg" />
+    <Content Include="Asset\images\slideshow\friday13.jpg" />
+    <Content Include="Asset\images\slideshow\ghostrecon.jpg" />
+    <Content Include="Asset\images\wow-emoji.png" />
+    <Content Include="Asset\script\burger-menu.js" />
+    <Content Include="Asset\script\cart-description.js" />
+    <Content Include="Asset\script\login.js" />
+    <Content Include="Asset\script\menu-bar.js" />
+    <Content Include="Asset\script\product-tab.js" />
+    <Content Include="Asset\script\slideshow.js" />
+    <Content Include="Asset\style\burger-menu.css" />
+    <Content Include="Asset\style\common-style.css" />
+    <Content Include="Asset\style\footer.css" />
+    <Content Include="Asset\style\header.css" />
+    <Content Include="Asset\style\menu-bar.css" />
+    <Content Include="Asset\style\page-not-found.css" />
+    <Content Include="Asset\style\product-card.css" />
+    <Content Include="Asset\style\product-line.css" />
+    <Content Include="Asset\style\product-tab.css" />
+    <Content Include="Asset\style\search-bar.css" />
+    <Content Include="Asset\style\slideshow.css" />
+    <Content Include="Asset\style\spotlight.css" />
+    <Content Include="Asset\style\sticky.css" />
+    <Content Include="Asset\style\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Category\Stream.cshtml" />
+    <Content Include="Views\Category\Origin.cshtml" />
+    <Content Include="Views\Category\Newst.cshtml" />
+    <Content Include="Views\Category\Popular.cshtml" />
+    <Content Include="Views\Category\Preoder.cshtml" />
+    <Content Include="Views\Category\Topselling.cshtml" />
+    <Content Include="Views\Account\AdminLogin.cshtml" />
+    <Content Include="Views\Account\UserLogin.cshtml" />
+    <Content Include="Views\Account\CreateAccount.cshtml" />
+    <Content Include="Views\Admin\AddCard.cshtml" />
+    <Content Include="Views\Admin\AddGame.cshtml" />
+    <Content Include="Views\Admin\CardInfo.cshtml" />
+    <Content Include="Views\Admin\Customer.cshtml" />
+    <Content Include="Views\Admin\DashboardCard.cshtml" />
+    <Content Include="Views\Admin\DashboardGame.cshtml" />
+    <Content Include="Views\Admin\Oder.cshtml" />
+    <Content Include="Views\Admin\OderInfo.cshtml" />
+    <Content Include="Views\Admin\RemoveCard.cshtml" />
+    <Content Include="Views\Admin\RemoveGame.cshtml" />
+    <Content Include="Views\FeedBack\Index.cshtml" />
+    <Content Include="Views\Category\ShoppingCart.cshtml" />
+    <Content Include="Views\FeedBack\AboutUs.cshtml" />
+    <Content Include="Views\FeedBack\Errol.cshtml" />
+    <Content Include="Views\Shared\_Layout1.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1059</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1059/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

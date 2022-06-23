@@ -1,0 +1,103 @@
+/*-----Spotlight-----*/
+#spotlight
+{
+    position: relative;
+    grid-row: 2/3;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#showcase-wrapper
+{
+    width: 100%;
+    position: relative;
+}
+
+.showcase
+{
+    width: 100%;
+    height: 62.5vw;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.showcase img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#spotlight-title
+{
+    display: block;
+}
+
+.product-info
+{
+    background: rgba(0,0,0,0.4);
+	color: #f2f2f2;
+	position: absolute;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	bottom: 0;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.product-name
+{
+    font-size: 15px;
+    position: relative;
+}
+
+.product-price
+{
+    font-size: 18px;
+    position: relative;
+}
+
+.product-price sup
+{
+    position: relative;
+    font-size: 10px;
+}
+
+.buy-now-btn
+{
+    font-size: 13px;
+	position: absolute;
+    padding: 10px;
+    line-height: 69.5px;
+    bottom: 0px;
+    right: 0;
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 1024px)
+{
+    #showcase-wrapper
+    {
+        justify-content: center;
+    }
+
+    .showcase
+    {
+        width: 320px;
+        height: 200px;
+        margin: 2.5px;
+        float: left;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+    .showcase
+    {
+        width: 400px;
+        height: 250px;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="../images/gamehublogo.png"/>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/admin-login-form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+    <script src="script/login.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+                <form id="admin-form" class="form-signin" action="../admin/dashboard-game.html">   
+                  <a href="#"><img class="logo" src="images/gamehub_adminlogin.png"></a>
+                  <input id="username" type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />   
+                  <input id="password" type="password" class="form-control" name="password" placeholder="Password" required=""/> 
+                  <label class="checkbox pull-left">  
+                  <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me 
+                  </label>
+                  <div class="sign-in">
+                  <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>           
+                  </div>
+                <a href="../page-not-found.html" >Forgot password ? </a>
+              </form>
+            </div>
+</body>
+</html>

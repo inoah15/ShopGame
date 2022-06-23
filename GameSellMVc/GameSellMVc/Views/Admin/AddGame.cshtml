@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "AddGame";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<link rel="stylesheet" type="text/css" media="screen" href="~/Asset/admin/style/add-products.css" />
+<script src="~/Asset/admin/script/login.js"></script>
+<
+<div class="body">
+    <div class="list">
+        <a class="list-box" @Html.ActionLink("Dashboard", "DashboardGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Add Product", "AddGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Customer", "Customer", "Admin") </a>
+        <a class="list-box main" @Html.ActionLink("Remove/Edit Product", "RemoveGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Orders", "Oder", "Admin") </a>
+    </div>
+    <div class="info">
+        <div class="add-product-title">
+            Add product
+            <a class="button game main-btn" @Html.ActionLink("Game", "AddGame", "Admin")</a>
+            <a class="button card  " @Html.ActionLink("Card", "AddCard", "Admin")</a>
+        </div>
+        <div class="form-wrapper">
+            <div class="form-style-2">
+                <div class="form-style-2-heading">Fill this form to add a Game</div>
+                <form action="" method="post">
+                    <label for="field1"><span>ID <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" size="50" /></label>
+                    <label for="field2"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" size="50" /></label>
+                    <label for="field3"><span>Price <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+                    <label for="field5"><span>Quantity <span class="required">*</span></span><input type="text" class="input-field" name="field1" size="20" /></label>
+                    <label for="field5">
+                        <span>Genre<span class="required">*</span></span><select name="field5" class="select-field">
+                            <option value="Action">Action</option>
+                            <option value="Action Adventure">Action Adventure</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Simulation">Simulation</option>
+                            <option value="Strateg">Strategy</option>
+                            <option value="Sports">Sports</option>
+                            <option value="Role Playing">Role Playing</option>
+                        </select>
+                    </label>
+                    <label for="field6">
+                        <span>Flatform<span class="required">*</span></span><select name="field6" class="select-field">
+                            <option value="Steam">Steam</option>
+                            <option value="Origin">Origin</option>
+                            <option value="Uplay">Uplay</option>
+                            <option value="Battlenet">Battlenet</option>
+                        </select>
+                    </label>
+                    <label for="field5"><span>Details <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+                    <label for="field5"><span>Description <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+                    <label for="field5"><span>System required <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+                    <label for="field1">
+                        <span>Import photo <span class="required">*</span></span><input type="file" name="pic" accept="image/*" name="field1" value="" /> <input type="file" name="pic" accept="image/*" name="field1" value="" />
+                        <input type="file" name="pic" accept="image/*" name="field1" value="" /> <input type="file" name="pic" accept="image/*" name="field1" value="" />
+                    </label>
+
+                    <label><span> </span><input type="submit" value="Submit" /> </label>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

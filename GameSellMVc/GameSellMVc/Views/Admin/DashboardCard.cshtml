@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "DashboardCard";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<link rel="stylesheet" type="text/css" media="screen" href="~/Asset/admin/style/style.css" />
+<script src="~/Asset/admin/script/login.js"></script>
+<div class="body">
+    <div class="list">
+        <a class="list-box main" @Html.ActionLink("Dashboard", "DashboardGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Add Product", "AddGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Customer", "Customer", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Remove/Edit Product", "RemoveGame", "Admin") </a>
+        <a class="list-box" @Html.ActionLink("Orders", "Oder", "Admin") </a>
+    </div>
+    <div class="info">
+        <div class="sale-dashboard-wrapper">
+            <div class="sale-dashboard-title">
+                Sales Dashboard
+                <a  class= "button game"        @Html.ActionLink("Game", "DashboardGame", "Admin")</a>
+                <a  class="button card main-btn"@Html.ActionLink("Card", "DashboardCard", "Admin")</a>
+            </div>
+            <div class="sale-dashboard">
+                <div class="dashboard-box">
+                    <div class="dashboard-text">PRODUCTS SOLD</div>
+                    <div class="dashboard-number">25</div>
+                </div>
+                <div class="dashboard-box">
+                    <div class="dashboard-text">GROSS PROFIT</div>
+                    <div class="dashboard-number">$36</div>
+                </div>
+                <div class="dashboard-box">
+                    <div class="dashboard-text">NEW CUSTOMERS</div>
+                    <div class="dashboard-number">12</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="new-orders">
+            <div class="sale-dashboard-title">
+                New Orders
+            </div>
+            <div class="table-wrapper">
+                <iframe src="~/Asset/admin/list/new-orders-card.html" height="100%" width="100%" frameBorder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
